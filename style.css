@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    margin:0 auto;
+    background-color:navy;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.7);
+}
+#header-left{
+    flex-basis: 60%;
+    margin: 0px 10px;
+    text-align: left;
+    font-size: 15px;
+    display: block;
+}
+#header-right{
+    flex-basis: 40%;
+    margin: 0px 3px;
+    text-align: right;
+}
+#header-right img{
+    height: 50px;
+    margin:0px 3px;
+    max-width: 30%;
+
+}
+ul{
+	margin:0;
+    list-style-type:none;
+    padding: 0px;
+    overflow:hidden;
+    
+}
+li{
+	float:left;
+ 
+}
+li a, .btn{
+
+    display: inline-block;
+    text-decoration:none;
+    font-size:20px;
+    text-align:center;
+    margin:0;
+    padding: 15px 15px;
+    color: white;
+}
+li a:hover, .dropdown:hover .btn{
+	background-color:cornflowerblue;
+    border-radius: 10px;
+}
+li .dropdown{
+	display:block;
+}
+.dropdowncontent{
+	display:none;
+    position:absolute;
+    background-color:cornflowerblue;
+    z-index: 1;
+}
+.dropdowncontent a{
+    padding:14px 15px;
+    text-decoration:none;
+    display:block;
+    text-align:left;
+}
+.dropdowncontent a:hover{
+	background-color: navy;
+    border-radius: 10px;
+}
+.dropdown:hover .dropdowncontent {
+    display: block;
+    border-radius: 10px;
+}
+
+.active{
+	background-color:cornflowerblue;
+    border-radius: 10px;
+}
+.teamname{
+    min-width: 70%; 
+    line-height:30px; 
+    position: absolute; 
+    right: 60px;
+    top: 10px; 
+    font-size: 30px;
+    color: aliceblue
+}
+.sortmenu{
+    display:none;
+}
+#listmenu{
+    display:none;
+}
+@media screen and (max-width:600px){
+    #header-left{
+        display: none;
+    }
+    #header-right{
+        flex-basis: 70%;
+        text-align: justify;
+    }
+    .teamname{
+        min-width: 70%; 
+        line-height:30px; 
+        position: absolute; 
+        left: 60px;
+        top: 10px; 
+        font-size: 30px;
+        color: aliceblue
+    }
+    .sortmenu{
+        display:block;
+        flex-basis: 30%;
+        float:right;
+        text-align: right;
+        z-index: 10;
+        font-size: 25px;
+        margin: 10px 10px;
+        line-height: 25px;
+        color:white;
+    }
+    #listmenu{
+        background-color: cornflowerblue;
+        width:100%;
+        display: none;
+        text-align: center;
+    }
+    #listmenu li{
+        list-style-type: none;
+        width: 100%;
+        
+    }
+    #listmenu ul{
+        margin: 53px auto;
+        position: relative;
+        width: 100%;
+    }
+    #listmenu li a:hover{
+        background-color:navy;
+        border-radius: 10px;
+        width: 100%;
+        border: 1px solid cornflowerblue;
+}
+}
