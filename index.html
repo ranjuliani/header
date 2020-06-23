@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Our Team</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="src/style/style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/png" href="src/assets/favicon.png">
+        <script src="https://kit.fontawesome.com/cab5175e6d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".sortmenu").click(function(){
+                    $("#listmenu").slideToggle("medium");});
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="header-left">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li class="dropdown"><a class="btn" href="#">Our Profile</a>
+                        <div class="dropdowncontent">
+                            <a href="#">Rizka Anjuliani</a>
+                            <a href="#">Suwartanti</a>
+                            <a href="#">Septi Retno D</a>
+                            <a href="#">Solehudin</a>
+                            <a href="#">Rustam</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="header-right" style="position: relative">
+                <span class="teamname">I-26 Team</span>
+                <img src="src/assets/logoteam.png">
+            </div>
+            <div class="sortmenu"><span class="fas fa-angle-down fa-lg" style="color:white;display: inline-block;margin:3px"></span></div>
+        </header>
+        <div id="listmenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
