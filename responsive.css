@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (max-width: 1000px) {
+  .lesson {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 670px) {
+   .lesson {
+     width: 100%;
+   }
+  
+  footer {
+    text-align:  center;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .top-wrapper {
+    text-align : left;
+    padding-top : 130px;
+  }
+  
+}
