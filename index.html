@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Our Team</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="src/style/style.css" rel="stylesheet" type="text/css" />
-        <link rel="icon" type="image/png" href="src/assets/favicon.png">
-        <script src="https://kit.fontawesome.com/cab5175e6d.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $(".sortmenu").click(function(){
-                    $("#listmenu").slideToggle("medium");});
-            });
-        </script>
-    </head>
-    <body>
-        <header>
-            <div id="header-left">
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li class="dropdown"><a class="btn" href="#">Our Profile</a>
-                        <div class="dropdowncontent">
-                            <a href="#">Rizka Anjuliani</a>
-                            <a href="#">Suwartanti</a>
-                            <a href="#">Septi Retno D</a>
-                            <a href="#">Solehudin</a>
-                            <a href="#">Rustam</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div id="header-right" style="position: relative">
-                <span class="teamname">I-26 Team</span>
-                <img src="src/assets/logoteam.png">
-            </div>
-            <div class="sortmenu"><span class="fas fa-angle-down fa-lg" style="color:white;display: inline-block;margin:3px"></span></div>
-        </header>
-        <div id="listmenu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Profile</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progate</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>TEAM PROFILE</h2>
+          <h3>Kelompok I26</h3>
         </div>
-    </body>
+        <div class="lessons">
+          <div class="lesson">
+          	<div class="lesson-content">
+          		<div class="lesson-icon">
+            		<img src="rizka.png">       	   
+            	</div>
+            	<h4>RIZKA ANJULIANI</h4>
+            	<h5>PALEMBANG</h5>
+            	<span class="btn message">View Profile</span>
+          	</div>                        
+          </div>
+          <div class="lesson">
+          	<div class="lesson-content">
+          		<div class="lesson-icon">
+            		<img src="suwartanti.png">
+            	</div>
+            	<h4>SUWARTANTI</h4>
+            	<h5>PANGANDARAN</h5>
+            	<span class="btn message">View Profile</span>
+          	</div>            
+          </div>
+          <div class="lesson">
+          	<div class="lesson-content">
+          		<div class="lesson-icon">
+            		<img src="septi.png">
+            	</div>
+            	<h4>SEPTI RETNO DESI</h4>
+            	<h5>MALANG</h5>
+            	<span class="btn message">View Profile</span>            
+          	</div>            
+          </div>
+          <div class="lesson">
+            <div class="lesson-content">
+            	<div class="lesson-icon">
+            		<img src="profil.png">            	
+            	</div>
+            	<h4>SOLEHUDIN</h4>
+            	<h5>CIREBON</h5>
+            	<span class="btn message">View Profile<span>
+            </div>
+          </div>
+          <div class="lesson">
+            <div class="lesson-content">
+            	<div class="lesson-icon">
+            		<img src="profil.png">
+            	</div>
+            	<h4>RUSTAM</h4>
+            	<h5>BLITAR</h5>
+            	<span class="btn message">View Profile<span>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
